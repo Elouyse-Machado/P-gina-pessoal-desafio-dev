@@ -1,0 +1,96 @@
+/* Paleta de cores */
+:root {
+    --cor-primaria: #bb86fc; /* Roxo */
+    --cor-secundaria: #bb86fc; /* Lilás */
+    --cor-background: #f4f4f9; /* Branco suave */
+    --cor-texto: #333;
+    --cor-texto-secundario: #ffffff;
+    --cor-hover: #ff9800; /* Laranja suave para destaque */
+}
+
+/* Estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+    margin-bottom: 60px; /* Espaço para evitar sobreposição com o rodapé */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-secundario);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-secundario);
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Estilo para a seção "Sobre Mim" com imagem e texto lado a lado */
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-conteudo p {
+    flex: 1;
+    margin: 0;
+}
+
+.sobre-conteudo .minha-foto {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o rodapé fixo na parte inferior */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-secundario);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para os ícones de redes sociais */
+footer .social-icon {
+    color: var(--cor-texto-secundario);
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icon:hover {
+    color: var(--cor-hover); /* Cor ao passar o mouse */
+}
